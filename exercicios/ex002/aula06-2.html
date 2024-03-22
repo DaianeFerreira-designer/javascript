@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeira programa</title>
+    <style>
+        body{
+            background-color: rgba(137, 43, 226, 0.322);
+            color: #888888;
+            font: normal 2em 'Courier New';
+        }
+        
+        h1{
+            color: rgb(73, 5, 94);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p> Eu sou uma Desenvolvedora Web de Sucesso!</p>
+
+    <script>
+         // Inteiro
+        var n1 = Number.parseInt (window.prompt ('Digite um número'))
+        var n2 = Number.parseInt (window.prompt ('Digite u número'))
+        var s = n1 + n2
+        window.alert ('A soma dos numeros é: ' + s + '!') // concatenação
+
+
+        // Float
+        var n1 = Number.parseFloat (window.prompt ('Digite um número'))
+        var n2 = Number.parseFloat (window.prompt ('Digite u número'))
+        var s = n1 + n2
+        window.alert ('A soma dos numeros é: ' + s + '!') // concatenação
+
+        // no javascritp novo você pode utilizar apenas o number, que ele reconhece se é inteiro ou float
+        var n1 = Number(window.prompt ('Digite um número'))
+        var n2 = Number(window.prompt ('Digite u número'))
+        var s = n1 + n2
+        window.alert (`A soma do ${n1} + ${n2} é igual = ${s}`) // concatenação
+
+        
+    </script>
+</body>
+</html>
