@@ -3,28 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeira programa</title>
-    <style>
-        body{
-            background-color: rgba(137, 43, 226, 0.322);
-            color: #888888;
-            font: normal 2em 'Courier New';
-        }
-        
-        h1{
-            color: rgb(73, 5, 94);
-        }
-    </style>
+    <title> meu programa</title>
+
+    <STYle>
+       body{
+        font: normal 2.1em arial;
+       }
+    </STYle>
 </head>
 <body>
-    <h1>Olá, Mundo!</h1>
-    <p> Eu sou uma Desenvolvedora Web de Sucesso!</p>
-    
     <script>
-        var nome window.alert('Qual seu nome?')       
-        document.write (`Seu nome tem ${nome.length}`)
-
-        
+        var nome = window.prompt('Qual seu nome?')
+        document.write (`Olá ${nome}, Seu Nome tem ${nome.length} Letras<br>`)
+        document.write (`Seu nome em maiúscula é ${nome.toUpperCase()} <br>`)
+        document.write (`Seu nome em minúsculo é ${nome.toLowerCase()}`)
     </script>
 </body>
 </html>
