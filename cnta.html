@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Trabalhando com dados 2 </h1>
+    <button onclick="inicio()"> Clique aqui para somar! </button>
+    <section id="resultado">
+        <p> Aqui vai aparecer o resultado</p>
+    </section>
+
+    <script>
+        function inicio() {
+            let n1 = window.prompt('digite um numero')
+            let n2 = window.prompt('digite um numero')
+            let res = n1 * n2
+            let res = window.document.getElementById('resultado')
+            res.innerHTML = `<p> olá, <strong>${res}</strong> essa é sua soma &#x1F596;</p>`
+        }
+    </script>
+</body>
+</html>
