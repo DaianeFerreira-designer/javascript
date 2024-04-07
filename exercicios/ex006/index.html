@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Somando</title>
+</head>
+<body>
+    <h1> Vamos somar</h1>
+    <button onclick="inicio()"> Clique aqui para somar </button>
+    <section id="resultado">
+        <p> Aqui irá aparecer sua soma</p>
+    </section>
+
+    <script>
+
+        function inicio(){
+            let n1 = Number.parInt(window.prompt('Digite o primeiro número'))
+            let n2 = Number.parInt(window.prompt('Digite o segundo número'))
+            let valor = n1 + n2
+            let res = window.document.getElementById('resultado')
+            res.innerHTML = `<p> A soma entre ${n1} e ${n2} é igual a ${valor} </p>`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Realizando o exercicio 05</title>
+    <style>
+        body {
+            font: 12pt Arial;
+        }
+
+        button{
+            font-size: 12pt;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Manipulando os numeros:</h1>
+    <button onclick="inicio()"> Clique aqui para calcular </button> <br>
+    <section id="resultado"> 
+        <p> Aqui vai aparecer o resultado da conta</p>
+    </section>
+  
+    <script>
+       
+        function inicio(){
+            window.alert('Bem vindo ao meu exercicio de Javascript')
+            let n1 = window.prompt('Digite um número')     
+            let dobro = n1 * 2
+            let metade = n1 / 2
+            let res = window.document.getElementById('resultado')
+            res.innerHTML=`<p> O dobro de ${n1} é ${dobro} e a metade é ${metade} </p>` 
+        }
+    </script>
+</body>
+</html>
