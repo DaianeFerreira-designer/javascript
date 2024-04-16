@@ -15,8 +15,8 @@
     <script>
 
         function inicio(){
-            let n1 = Number.parInt(window.prompt('Digite o primeiro número'))
-            let n2 = Number.parInt(window.prompt('Digite o segundo número'))
+            let n1 = Number(window.prompt('Digite o primeiro número'))
+            let n2 = Number(window.prompt('Digite o segundo número'))
             let valor = n1 + n2
             let res = window.document.getElementById('resultado')
             res.innerHTML = `<p> A soma entre ${n1} e ${n2} é igual a ${valor} </p>`
